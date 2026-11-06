@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Locator dev harness</title>
+<link rel="stylesheet" href="/dev/tokens.css">
+</head>
+<body>
+<div class="dev-frame">
+  <div class="dev-bar">
+    <label>Place
+      <select id="place">
+        <option value="seattle_wa">Seattle, WA</option>
+        <option value="austin_tx">Austin, TX</option>
+        <option value="hawaii_county_hi" selected>Hawaiʻi County, HI</option>
+      </select>
+    </label>
+    <a href="/locations">All locations</a>
+    <a href="/locations?view=map">Map</a>
+    <a href="/locations?item=clear%20%231%20bottles&rule_ids=hc-plastic-011">Item: hc-plastic-011</a>
+    <a href="/locations?item=cooking%20oil&rule_ids=hc-oil-015">Item: hc-oil-015</a>
+    <a href="/locations?item=paint&rule_ids=hc-hhw-010,hc-hhw-017">Item: conditional</a>
+    <a href="/locations/f-hc-06">Detail f-hc-06</a>
+    <a href="/locations?item=none&rule_ids=">No rules</a>
+  </div>
+  <div id="app"></div>
+</div>
+<script type="module" src="/dev/harness.js"></script>
+</body>
+</html>

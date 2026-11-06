@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RefCycle</title>
+  <link rel="stylesheet" href="/shared/fonts.css">
+  <link rel="stylesheet" href="/shared/tokens.css">
+  <link rel="stylesheet" href="/shared/app.css">
+  <link rel="stylesheet" href="/features/recyclopedia/recyclopedia.css">
+  <link rel="stylesheet" href="/features/camera-scan/camera-scan.css">
+  <link rel="stylesheet" href="/features/locator/locator.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div id="app" class="shell">
+    <header class="header" id="header">
+      <button class="icon-button" id="back" type="button" aria-label="Back"></button>
+      <h1 class="header-title" id="title">RefCycle</h1>
+      <label class="place-picker" id="place-picker" hidden>
+        <span class="visually-hidden">Place</span>
+        <select id="place-select"></select>
+      </label>
+    </header>
+    <main class="screen" id="screen" tabindex="-1"></main>
+    <nav class="tabbar" id="tabbar" aria-label="Main"></nav>
+  </div>
+  <noscript><p>RefCycle needs JavaScript.</p></noscript>
+  <script type="module" src="/shared/app.js"></script>
+</body>
+</html>

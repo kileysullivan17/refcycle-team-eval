@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camera scan dev harness</title>
+  <link rel="stylesheet" href="/dev/tokens.css">
+</head>
+<body>
+  <div class="dev-bar">
+    <button type="button" id="go-scan">/scan</button>
+    <button type="button" id="go-confirm">/scan/confirm</button>
+    <label>Fake model reply
+      <select id="mode">
+        <option value="identified">identified</option>
+        <option value="multiple">multiple</option>
+        <option value="unclear">unclear</option>
+        <option value="error">provider error (502)</option>
+      </select>
+    </label>
+  </div>
+  <div class="dev-stage" id="stage"></div>
+  <pre class="dev-log" id="log">navigate calls appear here</pre>
+  <script type="module" src="/dev/harness.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "build": "team",
+  "base_url": "http://127.0.0.1:3001",
+  "build_dir": "/Users/kileysullivan/refcycle-builds/refcycle-scored/team",
+  "build_head": "e7d73c4",
+  "keys_dir": "/Users/kileysullivan/refcycle-builds/refcycle-private/frozen-2026-11-05",
+  "splits": [
+    "test",
+    "held_out"
+  ],
+  "features": [
+    "recyclopedia",
+    "locator",
+    "scan"
+  ],
+  "repeats": 1,
+  "started": "2026-11-06T00:44:59.453Z",
+  "node": "v26.8.1",
+  "browser": "156.0.8078.80",
+  "host": "Kileys-Mac-mini.local",
+  "platform": "darwin 25.6.0",
+  "fake_photo_control": null,
+  "cases": 94,
+  "finished": "2026-11-06T01:00:39.503Z"
+}

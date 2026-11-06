@@ -1,0 +1,5 @@
+07f29e35779ab2797c484081235b9013f3c6e21215a925b532d65c045ad094cc  camera-scan.key.csv
+c1b5a9f5ca3fbd1b78cf58fd4adac8632ed35ecefa06f0d493919fd9d334dcbf  locator.key.csv
+eae2462aee566f84c5458f2f0a00d306ade395e89f2c62e296a47db76396db0a  recyclopedia.key.csv
+80332514105c849ec005877dd180a3b62447593af5c2a85e30c80b8aae375fc6  photos (36 files, concatenated in order)
+keys v2 2026-11-05: ph22 changed after results (see camera-scan.key.csv notes)

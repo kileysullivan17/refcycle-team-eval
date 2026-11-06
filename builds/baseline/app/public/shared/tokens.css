@@ -1,0 +1,37 @@
+/* Design tokens (CONTRACTS 11, final). The only place a color, font family, radius, font size or spacing value is defined. */
+:root {
+  --color-blue: #4468a1;
+  --color-ink: #17212c;
+  --color-gold: #ffd809;
+  --color-red: #ff2d35;
+  --color-sand: #f0e2c3;
+  --color-white: #ffffff;
+
+  --font-text: 'Outfit', system-ui, sans-serif;
+  --font-display: 'MuseoModerno', 'Outfit', system-ui, sans-serif;
+
+  --radius-control: 15px;
+  --space-unit: 8px;
+  --icon-max: 20px;
+
+  --type-h1-size: 28px;
+  --type-h1-weight: 300;
+  --type-h2-size: 22px;
+  --type-h2-weight: 400;
+  --type-h3-size: 20px;
+  --type-h3-weight: 400;
+  --type-headline-size: 17px;
+  --type-headline-weight: 600;
+  --type-body-size: 17px;
+  --type-body-weight: 400;
+  --type-callout-size: 16px;
+  --type-callout-weight: 400;
+  --type-subhead-size: 15px;
+  --type-subhead-weight: 400;
+  --type-footnote-size: 13px;
+  --type-footnote-weight: 400;
+  --type-caption-size: 11px;
+  --type-caption-weight: 400;
+  --type-card-red-size: var(--type-h2-size);
+  --type-card-red-weight: 700;
+}

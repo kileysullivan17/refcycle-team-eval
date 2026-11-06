@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RefCycle: Where does this go?</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header><a href="/" class="wordmark" aria-label="RefCycle home"><span class="mark" aria-hidden="true">↻</span> RefCycle</a><span class="header-note">Local rules. A clearer answer.</span></header>
+  <main>
+    <div class="intro"><p class="eyebrow">SORT WITH LOCAL GUIDANCE</p><h1>Where does <br>this go?</h1><p class="lede">Recycling rules change from place to place. <br>Check the guidance for where you live.</p></div>
+    <section class="workspace" aria-label="Find sorting guidance">
+      <form id="ask-form">
+        <label for="jurisdiction">Where do you live?</label>
+        <select id="jurisdiction" name="jurisdiction" required disabled><option value="">Loading jurisdictions…</option></select>
+        <label for="query">What are you sorting?</label>
+        <textarea id="query" name="query" rows="2" maxlength="2000" required placeholder="Describe one item, like an empty yogurt tub" aria-describedby="query-hint"></textarea>
+        <p id="query-hint" class="hint">Include details you know, such as the material, coating or food residue.</p>
+        <button id="submit" type="submit" disabled>Check local rules <span aria-hidden="true">→</span></button>
+      </form>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <p id="error" class="error" role="alert" hidden></p>
+      <section id="result" class="result" aria-label="Sorting result" tabindex="-1" hidden>
+        <p id="result-context" class="eyebrow"></p>
+        <h2 id="result-heading"></h2>
+        <p id="item" class="item"></p>
+        <div id="question-block" hidden><p id="question" class="question"></p><p class="hint">Add that detail to your description above, then check again.</p></div>
+        <ul id="conditions" class="conditions" hidden></ul>
+        <div id="prep-block"><h3>Before you sort</h3><ul id="prep"></ul><p id="no-prep" class="hint" hidden>No preparation steps are listed in the cited rule.</p></div>
+        <h3>What the local rule says</h3><div id="explanation"></div>
+        <div class="sources"><h3>Sources &amp; references</h3><ul id="sources"></ul><p id="rule-ids" class="hint"></p></div>
+      </section>
+    </section>
+    <footer>Guidance comes from the selected jurisdiction’s rules pack. If it doesn’t cover your item, we’ll say so.</footer>
+  </main>
+</body>
+</html>

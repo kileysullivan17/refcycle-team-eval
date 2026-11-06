@@ -1,0 +1,346 @@
+# RefCycle rules pack: County of Hawaiʻi, HI
+# Format: see _FORMAT.md in this folder.
+# DRAFT 2026-09-10. Quotes were captured by a web-reading tool, not copied by hand. Every rule is
+# verified_by_ks: false until checked against the live page.
+
+jurisdiction:
+  id: hawaii_county_hi
+  name: "County of Hawaiʻi, HI"
+  system_summary: >-
+    No curbside rubbish or recycling pickup. Residents take materials to County Recycling and
+    Transfer Stations. Drop-off recycling bins take only corrugated cardboard, brown kraft paper bags,
+    and small glass containers. HI-5 deposit beverage containers are redeemed separately at
+    redemption centers. Greenwaste goes to Greenwaste Recycling Collection Sites.
+    PLASTICS ARE WHERE THE PUBLISHED RULES AND REALITY DIVERGE. A County page still online says #1 and
+    #2 plastics are accepted; the current drop-off page says no plastics of any kind; transfer stations
+    have no plastics bins and staff say plastics are not accepted. The only plastics with a clear,
+    published rule are HI-5 beverage containers. Two private sites take some plastics, neither
+    publishes it, and each takes less than a resident would expect.
+  official_contact_url: "https://www.hawaiizerowaste.org/recycle/drop-off/"
+
+sources:
+  - id: src-01
+    kind: official_page
+    title: "Drop-Off Recycling Program"
+    url: "https://www.hawaiizerowaste.org/recycle/drop-off/"
+    publisher: "County of Hawaiʻi Department of Environmental Management"
+    page_date: 2026-08-08
+    retrieved: 2026-09-10
+  - id: src-02
+    kind: official_page
+    title: "Frequently Asked Questions"
+    url: "https://www.hawaiizerowaste.org/info/frequently-asked-questions/"
+    publisher: "County of Hawaiʻi Department of Environmental Management"
+    page_date: null
+    retrieved: 2026-09-10
+  - id: src-03
+    kind: official_page
+    title: "HI-5 Beverage Container Redemption Centers"
+    url: "https://www.hawaiizerowaste.org/recycle/hi5/"
+    publisher: "County of Hawaiʻi Department of Environmental Management"
+    page_date: 2026-09-03
+    retrieved: 2026-09-10
+  - id: src-04
+    kind: official_page
+    title: "Greenwaste & Food Recycling"
+    url: "https://www.hawaiizerowaste.org/recycle/greenwaste-recycling/"
+    publisher: "County of Hawaiʻi Department of Environmental Management"
+    page_date: null
+    retrieved: 2026-09-10
+  - id: src-06
+    kind: superseded
+    title: "Changes to County of Hawaiʻi Recycling Program: New List of Acceptable Materials (in Mix Bins) Starting December 1, 2018"
+    url: "https://www.hawaiizerowaste.org/events/changes-to-county-of-hawaii-recycling-program-new-list-of-acceptable-materials-in-mix-bins-starting-december-1-2018/"
+    publisher: "County of Hawaiʻi Department of Environmental Management"
+    page_date: 2018-12-01
+    retrieved: 2026-09-10
+    notes: >-
+      Still online. Lists clean #1 and #2 plastic bottles, jars and jugs as accepted. Contradicted by
+      src-01 and by src-07. Never the source of a rule.
+  - id: src-07
+    kind: field_observation
+    title: "Transfer station and a private recycler in Hilo visits"
+    url: null
+    publisher: "Pack author"
+    observer: "KS"
+    observed: "2026-07 (approximate, per KS 2026-10-29; private recycler and transfer station visits)"
+    retrieved: 2026-09-10
+    notes: >-
+      County transfer station: no receptacle for #1 or #2 plastics; on-site staff said plastics are not
+      accepted and pointed residents to a private recycler in Hilo for #1. A private recycler in Hilo:
+      shown an assortment of items marked #1, took the bottles only and declined the other #1 items.
+      Neither practice is published on the business's website.
+  - id: src-08
+    kind: field_observation
+    title: "#2 plastics drop-off, a private recycler in the Shipman Industrial Park"
+    url: null
+    publisher: "Pack author"
+    observer: "KS"
+    observed: "2026-07 (approximate, per KS 2026-10-29; confirmed in person)"
+    retrieved: 2026-09-10
+    notes: >-
+      A private recycler in the Shipman Industrial Park, accepted #2 plastic bottles brought by the pack
+      author. Only bottles were brought, so other #2 items (tubs, caps) were not tried. Not published on
+      the business's website. Re-check with a non-bottle #2 item before the final run (eval-spec 3.1).
+  - id: src-10
+    kind: field_report
+    title: "A private recycler in Hilo phone recheck"
+    url: null
+    publisher: "Pack author"
+    observer: "KS"
+    observed: "2026-11-03 (phone call, before the final run)"
+    retrieved: 2026-11-03
+    notes: >-
+      KS called a private recycler in Hilo: "#1 clear bottles only. no clamshells, no food
+      trays". Narrows the July visit (src-07), which recorded #1 bottles with no color limit.
+  - id: src-11
+    kind: field_report
+    title: "A private recycler in the Shipman Industrial Park phone recheck"
+    url: null
+    publisher: "Pack author"
+    observer: "KS"
+    observed: "2026-11-03 (phone call, before the final run)"
+    retrieved: 2026-11-03
+    notes: >-
+      KS called a private recycler in the Shipman Industrial Park: "#2 bottles and jugs. No caps or tubs."
+      Confirms the July visit (src-08) and closes its open item: other #2 items are not taken.
+  - id: src-05
+    kind: official_page
+    title: "Household Hazardous Waste"
+    url: "https://www.hawaiizerowaste.org/recycle/household-hazardous-waste/"
+    publisher: "County of Hawaiʻi Department of Environmental Management"
+    page_date: null
+    retrieved: 2026-09-10
+  - id: src-09
+    kind: official_page
+    title: "Tires"
+    url: "https://www.hawaiizerowaste.org/recycle/tires/"
+    publisher: "County of Hawaiʻi Department of Environmental Management"
+    page_date: null
+    retrieved: 2026-10-31
+
+rules:
+  - id: hc-system-000
+    applies_to: ["curbside pickup", "curbside recycling", "recycling pickup", "rubbish pickup"]
+    stream: null
+    conditions: null
+    prep: []
+    where: "County Recycling and Transfer Stations"
+    source: src-02
+    quote: "The County of Hawai`i currently does not have curbside rubbish or recycling pick-up services."
+    verified_by_ks: true
+
+  - id: hc-paper-001
+    applies_to: ["corrugated cardboard", "brown kraft paper bags", "paper shopping bags"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["clean", "flatten all boxes", "labels do not have to be removed", "do not put recyclables in plastic bags"]
+    where: "Cardboard and brown paper bag bin at transfer stations with drop-off recycling"
+    source: src-01
+    quote: "corrugated cardboard (please flatten all boxes); brown kraft paper bags (e.g. paper shopping bags)"
+    verified_by_ks: true
+
+  - id: hc-paper-002
+    applies_to: ["cardboard with food residue, oil or other contaminants", "pizza boxes"]
+    stream: garbage
+    conditions: null
+    prep: []
+    where: null
+    source: src-01
+    quote: "Contaminated materials that are dirty – have food residue, oil or other contaminants on them (e.g. pizza boxes)"
+    destination_source: src-02
+    destination_quote: "Undesirable materials and contaminants are landfilled."
+    verified_by_ks: true
+
+  - id: hc-paper-003
+    applies_to: ["boxboard or paperboard", "cereal boxes", "beer bottle holders", "soda can cartons", "office paper", "newspaper", "junk mail", "wax or plastic coated containers", "wax paper", "metallic or metal foil coated papers", "juice foil bags", "milk/juice cartons", "soup foil-pack cartons", "microwaveable foil-lined bags", "gable-top aseptic containers", "paper towels", "paper plates/cups", "napkins", "facial tissues", "parchment paper", "photographic paper", "shredded paper"]
+    stream: garbage
+    conditions: null
+    prep: []
+    where: null
+    source: src-01
+    quote: "Boxboard or paperboard (e.g. cereal boxes, beer bottle holders or soda can cartons); Office paper; Newspaper; Junk mail; Wax or plastic coated containers or wax paper, metallic or metal foil coated papers (i.e. juice foil bags, milk/juice cartons, soup foil-pack cartons or microwaveable foil-lined bags for crisping food); Paper towels, paper plates/cups, napkins, facial tissues; Parchment paper; Photographic paper; Shredded paper"
+    destination_source: src-02
+    destination_quote: "Undesirable materials and contaminants are landfilled."
+    verified_by_ks: true
+
+  - id: hc-glass-004
+    applies_to: ["small glass containers", "wine bottles", "liquor bottles", "jams and jelly jars", "baby food bottles", "pickle jars", "mason jars", "makeup or perfume containers"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["empty", "rinse clean", "labels do not have to be removed", "no covers, caps or lids"]
+    where: "Glass bin at transfer stations with drop-off recycling"
+    source: src-01
+    quote: "all types of empty small glass containers ... Rinse bottles clean. Labels do not have to be removed. No covers/caps/lids."
+    verified_by_ks: true
+
+  - id: hc-deposit-005
+    applies_to: ["HI-5 beverage containers", "soft drinks", "soda", "juice", "tea", "coffee drinks", "water", "beer", "malt beverages", "mixed spirits", "wine coolers"]
+    stream: deposit_return
+    conditions: null
+    prep: ["empty", "caps removed", "labels visible", "sort by type: glass, plastic, aluminum, bi-metal"]
+    where: "HI-5 redemption centers (14 on Hawaiʻi Island). HI-5 glass does not go in the glass bin."
+    source: src-03
+    quote: "5¢ redeemable deposit on each qualified beverage container ... soft drinks, soda, juice, tea, coffee drinks, water, beer, malt beverages, mixed spirits and wine coolers in metal, glass or plastic containers up to 68 fluid ounces"
+    verified_by_ks: true
+
+  - id: hc-deposit-014
+    applies_to: ["caps removed from HI-5 beverage containers"]
+    stream: garbage
+    conditions: null
+    prep: []
+    where: null
+    source: src-03
+    quote: "Caps should not be included when redeeming by weight, pursuant to Hawai’i Administrative Rules Section 11-282-61.  Also, caps may be made of different materials and currently are not collected for recycling by Hawai`i County.  Therefore, toss your caps in the rubbish."
+    verified_by_ks: true
+
+  - id: hc-plastic-006
+    applies_to: ["plastics, all types and forms", "plastic bags"]
+    stream: null
+    conditions:
+      - { if: "HI-5 deposit beverage container", stream: deposit_return }
+      - { if: "clear #1 plastic bottle, not HI-5 (see hc-plastic-011)", stream: drop_off_special }
+      - { if: "#2 plastic bottle or jug (see hc-plastic-012)", stream: drop_off_special }
+      - { if: "any other plastic, including #1 items that are not clear bottles, #2 items that are not bottles or jugs, and plastic bags", stream: garbage }
+    prep: []
+    where: null
+    source: src-01
+    quote: "Not accepted: Plastics (All types and forms, including plastic bags)"
+    destination_source: src-02
+    destination_quote: "Undesirable materials and contaminants are landfilled."
+    verified_by_ks: true
+
+  - id: hc-plastic-011
+    applies_to: ["clear #1 PET plastic bottles that are not HI-5 containers"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "A private recycler in Hilo. This location only. Clear #1 bottles only: no clamshells, no food trays (phone recheck 2026-11-03)."
+    location_limited: true
+    # Updated 2026-11-03 before the final run (KS phone recheck). Runs 1 and 2 used the July wording (src-07).
+    source: src-10
+    quote: "Field report (phone, 2026-11-03): a private recycler in Hilo: \"#1 clear bottles only. no clamshells, no food trays\". Not published by the business."
+    verified_by_ks: true
+
+  - id: hc-plastic-012
+    applies_to: ["#2 HDPE plastic bottles and jugs"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "A private recycler in the Shipman Industrial Park. This location only. Bottles and jugs only: no caps or tubs (phone recheck 2026-11-03)."
+    location_limited: true
+    # Updated 2026-11-03 before the final run (KS phone recheck). Runs 1 and 2 used the July wording (src-08).
+    source: src-11
+    quote: "Field report (phone, 2026-11-03): a private recycler in the Shipman Industrial Park: \"#2 bottles and jugs. No caps or tubs.\" Not published by the business."
+    verified_by_ks: true
+
+  - id: hc-metal-007
+    applies_to: ["clean metal (aluminum, steel, tin, bi-metal) cans", "metal caps/covers/lids"]
+    stream: null
+    conditions:
+      - { if: "HI-5 deposit beverage container", stream: deposit_return }
+      - { if: "any other clean metal can, cap, cover or lid", stream: drop_off_special }
+    prep: ["clean"]
+    where: "Transfer Station scrap metal bins (a separate roll-off, not part of the Drop-Off recycling bins; per KS, only at select transfer stations)"
+    source: src-01
+    quote: "Clean metal (aluminum, steel, tin, bi-metal & etc.) cans and metal caps/covers/lids (can be recycled in Transfer Station scrap metal bins)"
+    verified_by_ks: true
+
+  - id: hc-metal-013
+    applies_to: ["aluminum foil", "single-use aluminum pie/loaf/roasting pans"]
+    stream: garbage
+    conditions: null
+    prep: []
+    where: null
+    source: src-01
+    quote: "Single-use aluminum pie/loaf/roasting pans; Aluminum foil"
+    destination_source: src-02
+    destination_quote: "Undesirable materials and contaminants are landfilled."
+    verified_by_ks: true
+
+  - id: hc-green-008
+    applies_to: ["palm fronds", "leaves", "tree, shrub, bush and hedge cuttings", "grass clippings", "untreated and unpainted wood pallets", "logs and branches under 1 foot in diameter or 3 feet in length"]
+    stream: compost_bin
+    conditions: null
+    prep: ["no garbage bags", "reduce logs and branches to less than 1 foot in diameter or 3 feet in length before arrival"]
+    where: "Greenwaste Recycling Collection Sites"
+    source: src-04
+    quote: "palm fronds (may exceed 3 foot length), leaves; tree, shrubs, bush and hedge cuttings; grass clippings; untreated and unpainted wood pallets; logs, branches or other material less than 1 foot in diameter or 3 feet in length at the Recycling & Transfer Stations. (must be reduced in size prior to arrival at our facility)."
+    verified_by_ks: true
+
+  - id: hc-green-009
+    applies_to: ["post-consumer food waste"]
+    stream: garbage
+    conditions: null
+    prep: []
+    where: null
+    source: src-04
+    quote: "NOT Accepted at the Greenwaste Recycling Collection Sites: ... post-consumer food waste"
+    destination_inferred: true
+    verified_by_ks: true
+
+  - id: hc-oil-015
+    applies_to: ["used cooking oil from a household kitchen"]
+    stream: null
+    conditions:
+      - { if: "very small quantity (less than 1 gallon), fully solidified with an absorbent", stream: garbage }
+      - { if: "larger household quantity", stream: drop_off_special }
+    prep: ["for small quantities: solidify completely with an absorbent material (old/shredded newspaper, rags, kitty litter or oil spill absorbent); freezing does not count"]
+    where: "Larger household quantities: Big Island Biodiesel accepts limited quantities (call first)"
+    source: src-04
+    quote: "For very small quantities (< 1 gallon) of used cooking oil from your own household kitchen, you may solidify by means of an absorbent material (old/shredded newspaper, rags, kitty litter or oil spill absorbent) and then dispose with your regular trash.  It must be completely absorbed (not liquid) before disposal; freezing it doesn’t count. ... Accepts limited quantities of household generated used cooking oil"
+    verified_by_ks: true
+
+  - id: hc-hhw-010
+    applies_to: ["automotive fluids", "antifreeze/engine coolant", "used motor oil", "gasoline", "diesel", "lubricants", "brake fluid", "fuel additives", "engine cleaners", "corrosives (acids & bases)", "most types of household batteries (alkaline, NiCad, NiMH, lithium non-automotive and 11 pounds or less, lead-acid automotive)", "household flammable liquids (kerosene, home heating oil, lighter fluid)", "unbroken fluorescent bulbs (tubes & CFLs)", "pre-1979 PCB ballasts", "UV water disinfection bulbs", "mercury thermometers", "unused or outdated prescription medications", "toxic aerosol canisters", "household non-empty compressed gas cylinders/canisters (e.g. propane), 5 gallons or less", "oil-based paint, varnishes & stains", "liquid lead-based paints", "paint thinner/turpentine", "wood preservatives", "chemical paint removers", "toxic garden supplies (herbicides, pesticides, insecticides, fungicides)", "household poisons (insecticides, bug spray, rodenticide)", "photoelectric smoke detectors", "drain cleaners, pool chemicals, bleach"]
+    stream: drop_off_special
+    conditions: null
+    prep: ["normal household quantities only", "automotive fluids: 10-gallon limit, no container larger than 5 gallons", "labeled, spill-proof containers, preferably the original", "do not mix items unless the label directs", "lithium-based, rechargeable or 9-volt-and-up batteries: tape the terminals or bag each one separately"]
+    where: "County Household Hazardous Waste Collection Events, residential households only. Tentative schedule: Hilo and Kailua-Kona, February 2027 (dates TBD); Waimea District Park, March 6, 2027; Pāhoa Recycling & Transfer Station, March 7, 2027."
+    source: src-05
+    quote: "Automotive fluids (including antifreeze/engine coolant, used motor oil, gasoline, diesel, lubricants, brake fluid, fuel additives and engine cleaners). 10 gallon limit for any automotive fluids.  No container size greater than 5 gallons allowed. ... corrosives (acids & bases) ... most types of household batteries (alkaline, NiCad, NiMH, Lithium (non-automotive & no PV system, ≤11 pounds), lead-acid (automotive) and etc.). ... certain types of household flammable liquids (kerosene, home heating oil or lighter fluid – e.g. butane) ... unbroken fluorescent bulbs (tubes & CFLs) and chemical ballasts (pre-1979, label states “PCB”). ... residential unit UV water disinfection bulbs (≤ 25W, mercury-containing) ... mercury thermometers ... unused or outdated prescription medications (no illicit/controlled substances or sharps & needles) ... toxic aerosol canisters ... household non-empty compressed gas cylinders/canisters (e.g. propane. Commercial quantities (i.e., > 5 gallons) or types of gas not accepted. Empty cylinders are not acceptable, take to Scrap Metal company) ... oil-based paint, varnishes & stains. liquid lead-based paints.  paint thinner/turpentine.  wood preservatives. chemical paint removers. ... toxic garden supplies (herbicides, pesticides, insecticides and fungicides) ... household poisons (e.g. insecticides, bug spray, household rodenticide) ... photoelectric smoke detectors (must clearly state “photoelectric” (only) type detector. “ionization” or combination with “ionization” type detector not accepted.) ... miscellaneous hazardous or toxic household products (e.g. drain cleaners, pool chemicals, bleach)"
+    verified_by_ks: true
+
+  - id: hc-hhw-016
+    applies_to: ["incandescent bulbs", "LED bulbs"]
+    stream: garbage
+    conditions: null
+    prep: []
+    where: null
+    source: src-05
+    quote: "incandescent or LED bulbs (dispose with regular rubbish)"
+    verified_by_ks: true
+
+  - id: hc-hhw-017
+    applies_to: ["latex paint and base", "acrylic paints (water-based)"]
+    stream: null
+    conditions:
+      - { if: "usable paint", stream: drop_off_special }
+      - { if: "junk, rusty or unusable paint, completely dried out to a solid", stream: garbage }
+    prep: ["unusable paint: let it dry out completely to a solid before disposal"]
+    where: "Usable paint: the Reuse Centers at the Hilo, Keaʻau and Waimea Transfer Stations"
+    source: src-05
+    quote: "latex paint and base, acrylic paints (water-based) paint is collected for reuse at the Hilo, Kea‘au and Waimea Reuse Centers at Transfer Stations.  If the paint is junk/rusty/unusable solidify it by letting it completely dry out to a solid and dispose in regular trash."
+    verified_by_ks: true
+
+  - id: hc-hhw-018
+    applies_to: ["empty compressed gas cylinders/canisters (e.g. empty propane)"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "A scrap metal company"
+    source: src-05
+    quote: "empty compressed gas cylinders/canisters – these are scrap metal, contact Scrap Metal company."
+    verified_by_ks: true
+
+  - id: hc-tires-019
+    applies_to: ["tires", "car tires", "motor vehicle tires"]
+    stream: drop_off_special
+    conditions: null
+    prep: ["call first to verify how many tires they accept and fees"]
+    # Not accepted at any transfer station, landfill or scrap metal bin. Business names stay in the private pack
+    # (option B); the public copy says "listed private tire recyclers".
+    where: "Leave old tires with the retailer when buying new ones (disposal fee already paid). Otherwise one of the County's listed companies: [four listed tire companies, names withheld]. Call first."
+    source: src-09
+    quote: "This allows you to leave your old tire with the retailer that sold you a tire; you already paid the fee. ... The County of Hawai‘i is NOT collecting any whole tires at any transfer station or landfill, also we are not accepting tires in the scrap metal bins at any transfer station. If you need to dispose of old tires and you are not purchasing newer ones at the same time, the following companies will, recycle or legally dispose of your tires. Call first to verify how many tires they will accept and fees charged."
+    verified_by_ks: true

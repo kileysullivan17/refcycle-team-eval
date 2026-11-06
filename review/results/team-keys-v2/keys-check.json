@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "lines": [
+    {
+      "name": "camera-scan.key.csv",
+      "expected": "ab03722e1cb7a6b541d855b99a8ceb5c52c80fb823af8d50fe19f5686053745d",
+      "actual": "ab03722e1cb7a6b541d855b99a8ceb5c52c80fb823af8d50fe19f5686053745d",
+      "ok": true
+    },
+    {
+      "name": "locator.key.csv",
+      "expected": "c1b5a9f5ca3fbd1b78cf58fd4adac8632ed35ecefa06f0d493919fd9d334dcbf",
+      "actual": "c1b5a9f5ca3fbd1b78cf58fd4adac8632ed35ecefa06f0d493919fd9d334dcbf",
+      "ok": true
+    },
+    {
+      "name": "recyclopedia.key.csv",
+      "expected": "eae2462aee566f84c5458f2f0a00d306ade395e89f2c62e296a47db76396db0a",
+      "actual": "eae2462aee566f84c5458f2f0a00d306ade395e89f2c62e296a47db76396db0a",
+      "ok": true
+    },
+    {
+      "name": "photos (36 files, concatenated in order)",
+      "expected": "80332514105c849ec005877dd180a3b62447593af5c2a85e30c80b8aae375fc6",
+      "actual": "80332514105c849ec005877dd180a3b62447593af5c2a85e30c80b8aae375fc6",
+      "ok": true,
+      "files": 36
+    }
+  ]
+}

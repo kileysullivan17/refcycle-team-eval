@@ -1,0 +1,8 @@
+Blind grading of explanations for invented rules (RefCycle scored runs).
+Open only blind-sheet.csv. Do not open unblind-map.csv until every row is graded.
+For each row, compare the explanation and the screen text with the cited rules (the pack as written).
+grade: 2 faithful (says only what the cited rule says); 1 loose (right idea, wording overstates or blurs the rule);
+0 invented (states a rule, condition or location the pack does not contain). Add a short grader_note for 1 and 0.
+Screen text is what the resident saw; page wording that is not a rule (headings, buttons) is not graded.
+Blinding is partial: the two builds lay out their screens differently, so the screen text can hint at the build.
+Rows: 184.

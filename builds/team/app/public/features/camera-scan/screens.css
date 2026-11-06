@@ -1,0 +1,258 @@
+/* Camera scan styles. Tokens only (CONTRACTS 11): colors, fonts, radius, type sizes and spacing. */
+
+.cs-scan,
+.cs-confirm {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-unit);
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  font-family: var(--font-text);
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  color: var(--color-ink);
+}
+.cs-scan *,
+.cs-confirm * { box-sizing: border-box; }
+.cs-scan [hidden],
+.cs-confirm [hidden] { display: none !important; }
+
+/* Scan screen: dark camera surface */
+.cs-scan {
+  padding: var(--space-unit);
+  background: var(--color-ink);
+  color: var(--color-white);
+  border-radius: var(--radius-control);
+}
+.cs-topbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-unit);
+}
+.cs-spacer { flex: 1 1 auto; }
+.cs-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  max-height: 60vh;
+  overflow: hidden;
+  background: var(--color-ink);
+  border: 2px solid var(--color-white);
+  border-radius: var(--radius-control);
+}
+.cs-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cs-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-unit);
+  padding: calc(var(--space-unit) * 2);
+  text-align: center;
+  color: var(--color-white);
+}
+.cs-fallback-message {
+  margin: 0;
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+}
+.cs-file-label {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-unit) / 2);
+  font-size: var(--type-callout-size);
+  max-width: 100%;
+}
+.cs-file {
+  max-width: 100%;
+  font-family: var(--font-text);
+  font-size: var(--type-subhead-size);
+  color: var(--color-white);
+}
+.cs-file-hidden { display: none; }
+.cs-status {
+  margin: 0;
+  min-height: 24px;
+  font-size: var(--type-callout-size);
+  font-weight: var(--type-callout-weight);
+  text-align: center;
+}
+.cs-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-unit);
+}
+.cs-tips {
+  padding: calc(var(--space-unit) * 1.5);
+  background: var(--color-sand);
+  color: var(--color-ink);
+  border-radius: var(--radius-control);
+}
+.cs-tips-title {
+  margin: 0 0 var(--space-unit);
+  font-family: var(--font-display);
+  font-size: var(--type-h3-size);
+  font-weight: var(--type-h3-weight);
+  color: var(--color-ink);
+}
+.cs-tips-list {
+  margin: 0;
+  padding-left: calc(var(--space-unit) * 2);
+  font-size: var(--type-callout-size);
+  color: var(--color-ink);
+}
+.cs-tips-list li + li { margin-top: calc(var(--space-unit) / 2); }
+
+/* Buttons */
+.cs-btn,
+.cs-icon-btn,
+.cs-link-btn {
+  font-family: var(--font-text);
+  cursor: pointer;
+}
+.cs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--space-unit) / 2);
+  min-height: 48px;
+  min-width: 48px;
+  padding: calc(var(--space-unit) * 1.5) calc(var(--space-unit) * 2);
+  font-size: var(--type-headline-size);
+  font-weight: var(--type-headline-weight);
+  border: 2px solid transparent;
+  border-radius: var(--radius-control);
+}
+.cs-btn-primary {
+  background: var(--color-blue);
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+.cs-btn-secondary {
+  background: var(--color-white);
+  color: var(--color-ink);
+  border-color: var(--color-ink);
+}
+.cs-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  border-radius: var(--radius-control);
+}
+.cs-icon-btn[aria-pressed="true"] {
+  background: var(--color-gold);
+  color: var(--color-ink);
+  border-color: var(--color-gold);
+}
+.cs-icon {
+  width: var(--icon-max);
+  height: var(--icon-max);
+  flex: 0 0 auto;
+}
+.cs-btn:disabled,
+.cs-icon-btn:disabled { opacity: 0.5; cursor: default; }
+.cs-btn:focus-visible,
+.cs-icon-btn:focus-visible,
+.cs-link-btn:focus-visible,
+.cs-input:focus-visible,
+.cs-file:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Confirm screen: light surface */
+.cs-card {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-unit) * 2);
+  padding: calc(var(--space-unit) * 2);
+  background: var(--color-sand);
+  color: var(--color-ink);
+  border-radius: var(--radius-control);
+}
+.cs-question {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--type-h2-size);
+  font-weight: var(--type-h2-weight);
+  color: var(--color-ink);
+  overflow-wrap: anywhere;
+}
+.cs-hint {
+  margin: 0;
+  font-size: var(--type-callout-size);
+  color: var(--color-ink);
+}
+.cs-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-unit);
+}
+.cs-actions .cs-btn {
+  flex: 1 1 auto;
+  min-width: 120px;
+}
+.cs-candidates {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-unit);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cs-candidate {
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.cs-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-unit);
+}
+.cs-input {
+  width: 100%;
+  min-height: 48px;
+  padding: calc(var(--space-unit) * 1.5);
+  font-family: var(--font-text);
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  color: var(--color-ink);
+  background: var(--color-white);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-control);
+}
+.cs-link-btn {
+  align-self: flex-start;
+  min-height: 44px;
+  padding: calc(var(--space-unit) / 2) 0;
+  font-size: var(--type-callout-size);
+  font-weight: var(--type-callout-weight);
+  color: var(--color-ink);
+  background: transparent;
+  border: 0;
+  text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+  .cs-scan { padding: calc(var(--space-unit) / 2); }
+  .cs-btn { padding: calc(var(--space-unit) * 1.5); }
+}

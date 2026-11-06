@@ -1,0 +1,13 @@
+/* Recyclopedia screens */
+.search-form { display: flex; gap: var(--space-unit); margin-bottom: calc(var(--space-unit) * 2); }
+.search-button { padding: 0; width: calc(var(--space-unit) * 6); flex: none; }
+.entry-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-unit); }
+.entry-row {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-unit);
+  min-height: calc(var(--space-unit) * 7); padding: var(--space-unit) calc(var(--space-unit) * 2);
+  background: var(--color-sand); color: var(--color-ink); border-radius: var(--radius-control);
+  text-decoration: none; font-size: var(--type-body-size); overflow-wrap: anywhere;
+}
+.entry-row:hover { text-decoration: underline; }
+.results { display: grid; gap: var(--space-unit); }
+.ask-link { font-size: var(--type-callout-size); }

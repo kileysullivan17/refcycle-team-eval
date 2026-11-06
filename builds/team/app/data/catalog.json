@@ -1,0 +1,806 @@
+{
+  "categories": [
+    {
+      "id": "batteries",
+      "name": "Batteries",
+      "order": 1
+    },
+    {
+      "id": "biodegradable",
+      "name": "Biodegradable",
+      "order": 2
+    },
+    {
+      "id": "electronics",
+      "name": "Electronics",
+      "order": 3
+    },
+    {
+      "id": "glass",
+      "name": "Glass",
+      "order": 4
+    },
+    {
+      "id": "metal",
+      "name": "Metal",
+      "order": 5
+    },
+    {
+      "id": "paper",
+      "name": "Paper",
+      "order": 6
+    },
+    {
+      "id": "plastic",
+      "name": "Plastic",
+      "order": 7
+    },
+    {
+      "id": "rubber",
+      "name": "Rubber",
+      "order": 8
+    },
+    {
+      "id": "wood",
+      "name": "Wood",
+      "order": 9
+    },
+    {
+      "id": "miscellaneous",
+      "name": "Miscellaneous",
+      "order": 10
+    }
+  ],
+  "entries": [
+    {
+      "id": "batteries",
+      "category": "batteries",
+      "name": "Batteries",
+      "query": "Batteries",
+      "rule_ids": [
+        "sea-special-017",
+        "sea-special-018",
+        "atx-special-017",
+        "hc-hhw-010"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "battery-toys",
+      "category": "batteries",
+      "name": "Battery-operated toys",
+      "query": "Battery-operated toys",
+      "rule_ids": [
+        "atx-special-010"
+      ],
+      "covered_in": [
+        "austin_tx"
+      ]
+    },
+    {
+      "id": "food-scraps",
+      "category": "biodegradable",
+      "name": "Food scraps",
+      "query": "Food scraps",
+      "rule_ids": [
+        "sea-compost-006",
+        "atx-compost-013",
+        "hc-green-009"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "coffee-tea",
+      "category": "biodegradable",
+      "name": "Coffee grounds, filters and tea bags",
+      "query": "Coffee grounds, filters and tea bags",
+      "rule_ids": [
+        "sea-compost-020",
+        "atx-compost-013",
+        "atx-compost-014"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx"
+      ]
+    },
+    {
+      "id": "yard-trimmings",
+      "category": "biodegradable",
+      "name": "Yard trimmings, leaves and branches",
+      "query": "Yard trimmings, leaves and branches",
+      "rule_ids": [
+        "sea-compost-007",
+        "atx-compost-015",
+        "hc-green-008"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "compostable-packaging",
+      "category": "biodegradable",
+      "name": "Compostable bags and food packaging",
+      "query": "Compostable bags and food packaging",
+      "rule_ids": [
+        "sea-compost-008"
+      ],
+      "covered_in": [
+        "seattle_wa"
+      ]
+    },
+    {
+      "id": "electronics",
+      "category": "electronics",
+      "name": "Electronics",
+      "query": "Electronics",
+      "rule_ids": [
+        "sea-special-018",
+        "atx-special-018"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx"
+      ]
+    },
+    {
+      "id": "bulbs-fluorescent",
+      "category": "electronics",
+      "name": "Fluorescent bulbs and CFLs",
+      "query": "Fluorescent bulbs and CFLs",
+      "rule_ids": [
+        "sea-special-018",
+        "hc-hhw-010"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "bulbs-incandescent-led",
+      "category": "electronics",
+      "name": "Incandescent and LED bulbs",
+      "query": "Incandescent and LED bulbs",
+      "rule_ids": [
+        "sea-garbage-016",
+        "hc-hhw-016"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "smoke-detectors",
+      "category": "electronics",
+      "name": "Smoke detectors",
+      "query": "Smoke detectors",
+      "rule_ids": [
+        "hc-hhw-010"
+      ],
+      "covered_in": [
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "glass-bottles-jars",
+      "category": "glass",
+      "name": "Glass bottles and jars",
+      "query": "Glass bottles and jars",
+      "rule_ids": [
+        "sea-glass-014",
+        "atx-glass-012",
+        "hc-glass-004",
+        "hc-deposit-005"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "metal-cans",
+      "category": "metal",
+      "name": "Aluminum, steel and tin cans",
+      "query": "Aluminum, steel and tin cans",
+      "rule_ids": [
+        "sea-metal-013",
+        "atx-metal-011",
+        "atx-metal-020",
+        "hc-metal-007",
+        "hc-deposit-005"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "metal-foil-pans",
+      "category": "metal",
+      "name": "Aluminum foil and foil pans",
+      "query": "Aluminum foil and foil pans",
+      "rule_ids": [
+        "sea-metal-013",
+        "atx-metal-011",
+        "hc-metal-013"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "metal-scrap",
+      "category": "metal",
+      "name": "Scrap metal",
+      "query": "Scrap metal",
+      "rule_ids": [
+        "sea-metal-013"
+      ],
+      "covered_in": [
+        "seattle_wa"
+      ]
+    },
+    {
+      "id": "metal-gas-cylinders",
+      "category": "metal",
+      "name": "Propane and compressed gas cylinders",
+      "query": "Propane and compressed gas cylinders",
+      "rule_ids": [
+        "hc-hhw-010",
+        "hc-hhw-018"
+      ],
+      "covered_in": [
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-cardboard",
+      "category": "paper",
+      "name": "Cardboard",
+      "query": "Cardboard",
+      "rule_ids": [
+        "sea-paper-002",
+        "atx-paper-003",
+        "hc-paper-001"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-greasy-cardboard",
+      "category": "paper",
+      "name": "Greasy, oil-stained or food-soiled cardboard",
+      "query": "Greasy, oil-stained or food-soiled cardboard",
+      "rule_ids": [
+        "sea-garbage-023",
+        "atx-garbage-024",
+        "hc-paper-002"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-pizza-boxes",
+      "category": "paper",
+      "name": "Pizza boxes",
+      "query": "Pizza boxes",
+      "rule_ids": [
+        "sea-paper-004",
+        "sea-compost-005",
+        "atx-compost-014",
+        "hc-paper-002"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-mixed",
+      "category": "paper",
+      "name": "Mixed paper, mail, magazines and newspaper",
+      "query": "Mixed paper, mail, magazines and newspaper",
+      "rule_ids": [
+        "sea-paper-001",
+        "atx-paper-001",
+        "atx-paper-019",
+        "hc-paper-003"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-bags",
+      "category": "paper",
+      "name": "Paper bags",
+      "query": "Paper bags",
+      "rule_ids": [
+        "sea-paper-001",
+        "sea-compost-019",
+        "atx-compost-014",
+        "hc-paper-001"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-boxboard",
+      "category": "paper",
+      "name": "Boxboard and paperboard boxes",
+      "query": "Boxboard and paperboard boxes",
+      "rule_ids": [
+        "sea-paper-003",
+        "atx-paper-001",
+        "hc-paper-003"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-cartons",
+      "category": "paper",
+      "name": "Milk, juice and aseptic cartons",
+      "query": "Milk, juice and aseptic cartons",
+      "rule_ids": [
+        "sea-paper-003",
+        "atx-paper-002",
+        "hc-paper-003"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-cups-plates",
+      "category": "paper",
+      "name": "Paper cups, plates and take-out containers",
+      "query": "Paper cups, plates and take-out containers",
+      "rule_ids": [
+        "sea-paper-001",
+        "atx-paper-002",
+        "atx-compost-014",
+        "hc-paper-003"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-towels-napkins",
+      "category": "paper",
+      "name": "Paper towels, napkins and tissues",
+      "query": "Paper towels, napkins and tissues",
+      "rule_ids": [
+        "sea-compost-005",
+        "atx-compost-014",
+        "hc-paper-003"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-shredded",
+      "category": "paper",
+      "name": "Shredded paper",
+      "query": "Shredded paper",
+      "rule_ids": [
+        "atx-compost-016",
+        "hc-paper-003"
+      ],
+      "covered_in": [
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paper-coated-foil",
+      "category": "paper",
+      "name": "Wax, plastic or foil coated paper",
+      "query": "Wax, plastic or foil coated paper",
+      "rule_ids": [
+        "hc-paper-003"
+      ],
+      "covered_in": [
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-1",
+      "category": "plastic",
+      "name": "Plastic #1 PET",
+      "query": "Plastic #1 PET",
+      "rule_ids": [
+        "sea-plastic-009",
+        "hc-plastic-006",
+        "hc-plastic-011"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-2",
+      "category": "plastic",
+      "name": "Plastic #2 HDPE",
+      "query": "Plastic #2 HDPE",
+      "rule_ids": [
+        "sea-plastic-009",
+        "hc-plastic-006",
+        "hc-plastic-012"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-3",
+      "category": "plastic",
+      "name": "Plastic #3 PVC",
+      "query": "Plastic #3 PVC",
+      "rule_ids": [
+        "sea-plastic-009",
+        "sea-plastic-011",
+        "hc-plastic-006"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-4",
+      "category": "plastic",
+      "name": "Plastic #4 LDPE",
+      "query": "Plastic #4 LDPE",
+      "rule_ids": [
+        "sea-plastic-009",
+        "hc-plastic-006"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-5",
+      "category": "plastic",
+      "name": "Plastic #5 PP",
+      "query": "Plastic #5 PP",
+      "rule_ids": [
+        "sea-plastic-009",
+        "hc-plastic-006"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-6",
+      "category": "plastic",
+      "name": "Plastic #6 PS",
+      "query": "Plastic #6 PS",
+      "rule_ids": [
+        "sea-plastic-009",
+        "hc-plastic-006"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-7",
+      "category": "plastic",
+      "name": "Plastic #7 Other",
+      "query": "Plastic #7 Other",
+      "rule_ids": [
+        "sea-plastic-009",
+        "hc-plastic-006"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-bottles-jugs",
+      "category": "plastic",
+      "name": "Plastic bottles and jugs",
+      "query": "Plastic bottles and jugs",
+      "rule_ids": [
+        "sea-plastic-009",
+        "atx-plastic-004",
+        "hc-plastic-006",
+        "hc-plastic-011",
+        "hc-plastic-012",
+        "hc-deposit-005"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-tubs-containers",
+      "category": "plastic",
+      "name": "Plastic tubs, cups and food containers",
+      "query": "Plastic tubs, cups and food containers",
+      "rule_ids": [
+        "sea-plastic-010",
+        "atx-plastic-005",
+        "hc-plastic-006"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-bags-film",
+      "category": "plastic",
+      "name": "Plastic bags, wrap and film",
+      "query": "Plastic bags, wrap and film",
+      "rule_ids": [
+        "sea-plastic-012",
+        "atx-plastic-008",
+        "hc-plastic-006"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-foam",
+      "category": "plastic",
+      "name": "Styrofoam",
+      "query": "Styrofoam",
+      "rule_ids": [
+        "atx-foam-009"
+      ],
+      "covered_in": [
+        "austin_tx"
+      ]
+    },
+    {
+      "id": "plastic-rigid-household",
+      "category": "plastic",
+      "name": "Rigid household plastics (buckets, baskets, furniture, toys, plant pots)",
+      "query": "Rigid household plastics (buckets, baskets, furniture, toys, plant pots)",
+      "rule_ids": [
+        "sea-plastic-011",
+        "atx-plastic-006",
+        "hc-plastic-006"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-small-items",
+      "category": "plastic",
+      "name": "Straws, plastic utensils and small plastic items",
+      "query": "Straws, plastic utensils and small plastic items",
+      "rule_ids": [
+        "atx-plastic-007",
+        "hc-plastic-006"
+      ],
+      "covered_in": [
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-medicine-bottles",
+      "category": "plastic",
+      "name": "Pill and medicine bottles",
+      "query": "Pill and medicine bottles",
+      "rule_ids": [
+        "sea-plastic-011",
+        "atx-plastic-021",
+        "hc-plastic-006"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "plastic-bottle-caps",
+      "category": "plastic",
+      "name": "Bottle caps and lids",
+      "query": "Bottle caps and lids",
+      "rule_ids": [
+        "sea-plastic-010",
+        "atx-plastic-004",
+        "atx-plastic-007",
+        "atx-glass-012",
+        "hc-glass-004",
+        "hc-metal-007",
+        "hc-deposit-014"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "tires",
+      "category": "rubber",
+      "name": "Tires",
+      "query": "Tires",
+      "rule_ids": [
+        "sea-special-024",
+        "atx-special-023",
+        "hc-tires-019"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "wood-untreated",
+      "category": "wood",
+      "name": "Untreated wood, pallets and wood scraps",
+      "query": "Untreated wood, pallets and wood scraps",
+      "rule_ids": [
+        "atx-compost-016",
+        "hc-green-008"
+      ],
+      "covered_in": [
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "hi5-containers",
+      "category": "miscellaneous",
+      "name": "HI-5 deposit beverage containers",
+      "query": "HI-5 deposit beverage containers",
+      "rule_ids": [
+        "hc-deposit-005",
+        "hc-deposit-014"
+      ],
+      "covered_in": [
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "motor-oil-fluids",
+      "category": "miscellaneous",
+      "name": "Motor oil and automotive fluids",
+      "query": "Motor oil and automotive fluids",
+      "rule_ids": [
+        "sea-special-021",
+        "atx-special-022",
+        "hc-hhw-010"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "austin_tx",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "cooking-oil",
+      "category": "miscellaneous",
+      "name": "Used cooking oil",
+      "query": "Used cooking oil",
+      "rule_ids": [
+        "sea-special-021",
+        "hc-oil-015"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "paint",
+      "category": "miscellaneous",
+      "name": "Paint",
+      "query": "Paint",
+      "rule_ids": [
+        "sea-special-022",
+        "hc-hhw-010",
+        "hc-hhw-017"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "household-chemicals",
+      "category": "miscellaneous",
+      "name": "Household chemicals, pesticides and poisons",
+      "query": "Household chemicals, pesticides and poisons",
+      "rule_ids": [
+        "sea-special-022",
+        "hc-hhw-010"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "medicines-sharps",
+      "category": "miscellaneous",
+      "name": "Medicines and syringes",
+      "query": "Medicines and syringes",
+      "rule_ids": [
+        "sea-special-018",
+        "hc-hhw-010"
+      ],
+      "covered_in": [
+        "seattle_wa",
+        "hawaii_county_hi"
+      ]
+    },
+    {
+      "id": "diapers-hygiene",
+      "category": "miscellaneous",
+      "name": "Diapers, pet waste and hygiene products",
+      "query": "Diapers, pet waste and hygiene products",
+      "rule_ids": [
+        "sea-garbage-015"
+      ],
+      "covered_in": [
+        "seattle_wa"
+      ]
+    }
+  ]
+}

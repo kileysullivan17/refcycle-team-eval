@@ -1,0 +1,309 @@
+# RefCycle rules pack: Seattle, WA
+# Format: see _FORMAT.md in this folder.
+# DRAFT 2026-09-10. Quotes were captured by a web-reading tool, not copied by hand. Every rule is
+# verified_by_ks: false until checked against the live page.
+
+jurisdiction:
+  id: seattle_wa
+  name: "Seattle, WA"
+  system_summary: >-
+    Curbside collection in three streams: recycling, compost (food and yard waste), and garbage.
+    Recyclables must be empty, clean and dry. Food is not allowed in the garbage or recycling.
+    Batteries, electronics and hazardous items need special disposal.
+  official_contact_url: "https://www.seattle.gov/utilities/your-services/collection-and-disposal/where-does-it-go"
+
+sources:
+  - id: src-01
+    kind: official_page
+    title: "Where Does It Go? How to Sort your Compost, Recycling, & Garbage"
+    url: "https://www.seattle.gov/documents/Departments/SPU/Services/Recycling/WDIG/Sorting-Compost-Recycling-Garbage-English.pdf"
+    publisher: "Seattle Public Utilities"
+    page_date: null
+    retrieved: 2026-09-10
+  - id: src-02
+    kind: superseded
+    title: "Kitchen Food Waste Containers and Bags (compost poster). Link returned 404 on 2026-10-29; kept for the record, never cited"
+    url: "https://seattle.gov/documents/Departments/SPU/Services/FoodYard/Compost-Poster-English.pdf"
+    publisher: "Seattle Public Utilities"
+    page_date: "10-19 (print code AP7-COM-ENG-10-19)"
+    retrieved: 2026-09-10
+  - id: src-03
+    kind: official_page
+    title: "Top 5 Items Wanted: Recycle, Compost, Garbage"
+    url: "https://www.adc.seattle.gov/documents/Departments/SPU/Services/Recycling/Top-5-Items-Wanted-Recycle-Compost-Garbage_English.pdf"
+    publisher: "Seattle Public Utilities"
+    page_date: "12-21 (print code MF2-12-21, a multifamily flyer)"
+    retrieved: 2026-09-10
+  - id: src-04
+    kind: official_page
+    title: "FAQ: Recology King County, Seattle"
+    url: "https://www.recology.com/recology-king-county/seattle/faq/"
+    publisher: "Recology King County (Seattle collection contractor)"
+    page_date: null
+    retrieved: 2026-09-10
+  - id: src-05
+    kind: official_page
+    title: "Your Guide to Safely Recycling Batteries"
+    url: "https://atyourservice.seattle.gov/2024/09/09/your-guide-to-safely-recycling-batteries/"
+    publisher: "Seattle Public Utilities"
+    page_date: 2024-09-09
+    retrieved: 2026-09-10
+  - id: src-06
+    kind: official_page
+    title: "Collection & Disposal: Food & Yard"
+    url: "https://www.seattle.gov/utilities/your-services/collection-and-disposal/food-and-yard"
+    publisher: "Seattle Public Utilities"
+    page_date: null
+    retrieved: 2026-10-29
+  - id: src-07
+    kind: official_page
+    title: "Transfer Station Rates"
+    url: "https://seattle.gov/utilities/your-services/collection-and-disposal/transfer-stations/rates"
+    publisher: "Seattle Public Utilities"
+    page_date: "rates as of April 1, 2026"
+    retrieved: 2026-10-31
+
+rules:
+  - id: sea-paper-001
+    applies_to: ["office paper", "windowed envelopes", "color paper", "file folders", "mail", "magazines", "mixed paper", "newspaper", "paper bags", "paper cups", "phone books", "paperback books", "wrapping paper (non-metallic)"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["empty, clean and dry"]
+    where: null
+    source: src-04
+    quote: "Office paper, including windowed envelopes, color paper, and file folders Mail, magazines, mixed paper Newspaper Paper bags Paper cups Phone books & paperback books Wrapping paper (non-metallic)"
+    verified_by_ks: true
+
+  - id: sea-paper-002
+    applies_to: ["cardboard"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["flatten"]
+    where: null
+    source: src-04
+    quote: "Cardboard (flattened)"
+    verified_by_ks: true
+
+  - id: sea-paper-003
+    applies_to: ["paper cartons", "juice boxes", "Tetra Paks and aseptic containers", "milk and soy milk cartons", "paper or frozen food boxes"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["clean and empty"]
+    where: null
+    source: src-04
+    quote: "Paper cartons Juice boxes, Tetra Paks & aseptic containers Milk and soy milk cartons Paper or frozen food boxes"
+    verified_by_ks: true
+
+  - id: sea-paper-004
+    applies_to: ["pizza boxes"]
+    stream: compost_bin
+    conditions: null
+    prep: []
+    where: null
+    source: src-03
+    quote: "Pizza boxes, napkins & paper towels"
+    verified_by_ks: true
+
+  - id: sea-compost-005
+    applies_to: ["food-soiled pizza boxes", "paper napkins", "paper towels", "compostable paper"]
+    stream: compost_bin
+    conditions: null
+    prep: []
+    where: null
+    source: src-06
+    quote: "since 2015, you can no longer put food and compostable paper, including food-soiled pizza boxes, paper napkins, and paper towels, in the garbage."
+    verified_by_ks: true
+  - id: sea-compost-006
+    applies_to: ["food scraps", "fruit and vegetables", "meat", "bones", "shells", "dairy", "fish", "moldy leftovers"]
+    stream: compost_bin
+    conditions: null
+    prep: []
+    where: null
+    source: src-06
+    quote: "Fruit and vegetables, yard trimmings, meat, dairy, and fish are all accepted ... The most common items in the food & yard waste carts are food scraps (meat, bones, shells, dairy, fish and moldy leftovers), leaves, branches, plants, and approved food packaging that says \"Compostable.\""
+    verified_by_ks: true
+  - id: sea-compost-007
+    applies_to: ["yard trimmings", "yard debris", "leaves", "grass", "plant trimmings", "branches", "plants"]
+    stream: compost_bin
+    conditions: null
+    also_acceptable: [drop_off_special]
+    also_acceptable_source: src-07
+    also_acceptable_quote: "Clean Yard Waste ... $25 per trip ... $132 per ton ($25 minimum charge covers up to 380 lbs.)"
+    prep: []
+    where: null
+    source: src-06
+    quote: "Yard debris such as leaves, grass, and plant trimmings are not allowed in your garbage, either. ... The most common items in the food & yard waste carts are food scraps (meat, bones, shells, dairy, fish and moldy leftovers), leaves, branches, plants, and approved food packaging that says \"Compostable.\""
+    verified_by_ks: true
+  - id: sea-compost-008
+    applies_to: ["compostable bags", "compostable food packaging"]
+    stream: compost_bin
+    conditions: null
+    prep: []
+    where: null
+    source: src-03
+    quote: "Compostable bags; Compostable food packaging"
+    verified_by_ks: true
+
+  - id: sea-plastic-009
+    applies_to: ["plastic bottles (all colors and numbers)", "clear or colored plastic milk jugs"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["empty, clean and dry"]
+    where: null
+    source: src-04
+    quote: "Bottles (all colors and numbers) ... Clear or colored plastic milk jugs"
+    verified_by_ks: true
+
+  - id: sea-plastic-010
+    applies_to: ["plastic food containers and trays", "dairy tubs", "plastic cups", "plastic lids 3 inches or wider"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["empty, clean and dry"]
+    where: null
+    source: src-04
+    quote: "Food containers and trays ... Dairy tubs ... Plastic cups Lids (3 inches or wider)"
+    verified_by_ks: true
+
+  - id: sea-plastic-011
+    applies_to: ["pill bottles (not prescription vials)", "plastic plant pots", "plastic buckets", "PVC pipe (white only)", "household rigid plastic items such as furniture and laundry baskets"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["empty, clean and dry"]
+    where: null
+    source: src-04
+    quote: "Pill bottles (no prescription vials) ... Plastic plant pots Plastic buckets PVC pipe (white only) Household rigid plastic items such as furniture, and laundry baskets"
+    verified_by_ks: true
+
+  - id: sea-plastic-012
+    applies_to: ["plastic bags", "plastic wraps", "plastic wrappers"]
+    stream: garbage
+    conditions: null
+    also_acceptable: [drop_off_special]
+    also_acceptable_source: src-04
+    also_acceptable_quote: "As of 2020, plastic bags and wrap are no longer accepted in curbside recycling bins. Please check with your local grocery store to see if they offer a take-back program. Many stores have such programs and offer easy drop off near the check-out counter."
+    prep: []
+    where: null
+    source: src-03
+    quote: "Plastic Bags ... Plastic bags, wraps & wrappers"
+    verified_by_ks: true
+
+  - id: sea-metal-013
+    applies_to: ["aluminum cans", "tin cans", "aluminum foil and pie tins (clean)", "ferrous scrap metal", "other scrap metals (less than 2 feet by 2 feet by 2 feet)"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["clean and empty"]
+    where: null
+    source: src-04
+    quote: "Aluminum cans Aluminum foil & pie tins (clean) Tin cans Ferrous scrap metal Other scrap metals (less than 2' x 2' x 2')"
+    verified_by_ks: true
+
+  - id: sea-glass-014
+    applies_to: ["glass bottles", "glass jars"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["empty, clean and dry"]
+    where: null
+    source: src-01
+    quote: "Glass Bottles & Jars ... Empty, clean, and dry"
+    verified_by_ks: true
+
+  - id: sea-garbage-015
+    applies_to: ["diapers (bagged)", "pet waste (bagged)", "hygiene products", "personal protective equipment"]
+    stream: garbage
+    conditions: null
+    prep: ["bag diapers and pet waste"]
+    where: null
+    source: src-03
+    quote: "Diapers & pet waste - bagged; Hygiene products & personal protective equipment"
+    verified_by_ks: true
+
+  - id: sea-garbage-016
+    applies_to: ["incandescent bulbs", "LED bulbs"]
+    stream: garbage
+    conditions: null
+    prep: []
+    where: null
+    source: src-01
+    quote: "Incandescent and LED bulbs"
+    verified_by_ks: true
+
+  - id: sea-special-017
+    applies_to: ["batteries"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "Free drop-off at the North and South Household Hazardous Waste Facilities or the North and South Transfer Stations; curbside pickup for a fee"
+    source: src-05
+    quote: "Batteries are banned from the garbage"
+    verified_by_ks: true
+
+  - id: sea-special-018
+    applies_to: ["electronics", "fluorescent light bulbs", "medicines", "syringes"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: null
+    source: src-03
+    quote: "Electronics; Batteries & fluorescent light bulbs; Medicines & syringes"
+    verified_by_ks: true
+
+  - id: sea-compost-019
+    applies_to: ["paper bags containing food scraps"]
+    stream: compost_bin
+    conditions: null
+    prep: []
+    where: null
+    source: src-04
+    quote: "Paper bags containing food scraps"
+    verified_by_ks: true
+
+  - id: sea-compost-020
+    applies_to: ["coffee grounds and filters", "tea bags"]
+    stream: compost_bin
+    conditions: null
+    prep: []
+    where: null
+    source: src-04
+    quote: "Put these types of materials in your food and yard waste cart: ... Coffee grounds and filters ... Tea bags"
+    verified_by_ks: true
+
+  - id: sea-special-021
+    applies_to: ["used motor oil", "used cooking oil"]
+    stream: drop_off_special
+    conditions: null
+    prep: ["put cooking and motor oil in separate 1-gallon plastic containers labeled with your address", "up to 2 gallons per collection day"]
+    where: "Set out next to the recycle cart on collection day; no need to schedule a pickup"
+    source: src-01
+    quote: "No Need to Schedule Pickup ... Used Motor & Cooking Oil FREE ... Put cooking and motor oil in separate 1-gallon plastic containers labeled with your address ... Set out up to 2 gallons per collection day, set out NEXT TO RECYCLE CART"
+    verified_by_ks: true
+
+  - id: sea-special-022
+    applies_to: ["household hazardous waste", "pesticides", "chemicals", "oil-based paint", "anything marked CAUTION, WARNING, DANGER, or POISON"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "Household Hazardous Waste facilities (free): North Facility, 12550 Stone Ave N., Seattle, WA 98133; South Facility, 8100 2nd Ave S., Seattle, WA 98108. Hours and information: hazwastehelp.org"
+    source: src-01
+    quote: "Household Hazardous Waste (free) ... Drop off pesticides, chemicals, oil-based paint, and anything marked “CAUTION,” “WARNING,” “DANGER,” or “POISON”"
+    verified_by_ks: true
+
+  - id: sea-garbage-023
+    applies_to: ["recyclables that are not empty, clean and dry (for example oil-stained cardboard)"]
+    stream: garbage
+    conditions: null
+    prep: []
+    where: null
+    source: src-01
+    quote: "MUST BE EMPTY, CLEAN, AND DRY ... Non-Recyclable"
+    destination_inferred: true
+    verified_by_ks: true
+
+  - id: sea-special-024
+    applies_to: ["vehicle tires", "car tires"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "Seattle transfer stations (North and South). $16 per load, limit 4 tires per load. Open 8 am to 5:30 pm daily (10 am start on the first Wednesday of the month)."
+    source: src-07
+    quote: "Vehicle Tires Only ... $16 per load (limit 4 tires per load)"
+    verified_by_ks: true

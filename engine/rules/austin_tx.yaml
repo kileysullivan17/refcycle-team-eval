@@ -1,0 +1,327 @@
+# RefCycle rules pack: Austin, TX
+# Format: see _FORMAT.md in this folder.
+# DRAFT 2026-09-10. Quotes were captured by a web-reading tool, not copied by hand. Every rule is
+# verified_by_ks: false until checked against the live page.
+
+jurisdiction:
+  id: austin_tx
+  name: "Austin, TX"
+  system_summary: >-
+    Curbside collection with a blue recycling cart, a green composting cart, and a trash cart.
+    Hard-to-recycle items (plastic bags and film, Styrofoam, batteries) go to store drop-off or the
+    Recycle and Reuse Drop-off Center, by appointment. Electronics go through on-demand bulk collection.
+  official_contact_url: "https://www.austintexas.gov/recycling"
+
+sources:
+  - id: src-01
+    kind: official_page
+    title: "Residential Curbside Recycling Collection"
+    url: "https://www.austintexas.gov/recycling"
+    publisher: "Austin Resource Recovery"
+    page_date: null
+    retrieved: 2026-09-10
+  - id: src-02
+    kind: official_page
+    title: "Which plastics can (and can't) be recycled curbside"
+    url: "https://www.austintexas.gov/resource-recovery/road-zero-waste/what-plastics-can-and-cant-be-recycled-curbside"
+    publisher: "Austin Resource Recovery"
+    page_date: 2026-05-05
+    retrieved: 2026-09-10
+  - id: src-03
+    kind: official_page
+    title: "Residential Curbside Composting Guide"
+    url: "https://www.austintexas.gov/resource-recovery/curbside-composting-guide"
+    publisher: "Austin Resource Recovery"
+    page_date: null
+    retrieved: 2026-09-10
+  - id: src-04
+    kind: official_page
+    title: "What to do with batteries and other hard-to-recycle items"
+    url: "https://www.austintexas.gov/resource-recovery/road-zero-waste/what-do-batteries-and-other-hard-recycle-items"
+    publisher: "Austin Resource Recovery"
+    page_date: 2025-03-19
+    retrieved: 2026-09-10
+  - id: src-05
+    kind: business_page
+    title: "Aluminum can buying page (a local scrap metal yard)"
+    url: null
+    publisher: "A local scrap metal yard"
+    page_date: 2023-07-20
+    retrieved: 2026-10-31
+  - id: src-06
+    kind: business_page
+    title: "Austin North (a local scrap metal yard, nonferrous price list)"
+    url: null
+    publisher: "A local scrap metal yard"
+    page_date: null
+    retrieved: 2026-10-31
+  - id: src-07
+    kind: business_page
+    title: "Austin South (a local scrap metal yard, nonferrous price list)"
+    url: null
+    publisher: "A local scrap metal yard"
+    page_date: null
+    retrieved: 2026-10-31
+  - id: src-08
+    kind: official_page
+    title: "Drugs, Medicines and Pharmaceuticals Disposal"
+    url: "https://www.austintexas.gov/resource-recovery/drugs-medicines-and-pharmaceuticals-disposal"
+    publisher: "Austin Resource Recovery"
+    page_date: null
+    retrieved: 2026-10-31
+  - id: src-09
+    kind: official_page
+    title: "Recycle and Reuse Center"
+    url: "https://www.austintexas.gov/resource-recovery/locations/recycle-and-reuse-drop-center"
+    publisher: "Austin Resource Recovery"
+    page_date: null
+    retrieved: 2026-10-31
+
+rules:
+  - id: atx-paper-001
+    applies_to: ["catalogs and magazines", "glossy paper", "junk mail and envelopes", "non-foil wrapping paper", "boxes", "toilet paper and paper towel rolls"]
+    stream: recycle_bin
+    conditions: null
+    prep: []
+    where: null
+    source: src-01
+    quote: "Catalogs and magazines ... Glossy paper ... Junk mail and envelopes ... Newspapers ... Non-foil wrapping paper ... Boxes ... Toilet paper and paper towel rolls"
+    verified_by_ks: true
+
+  - id: atx-paper-019
+    applies_to: ["newspapers"]
+    stream: recycle_bin
+    conditions: null
+    also_acceptable: [compost_bin]
+    prep: []
+    where: null
+    source: src-01
+    quote: "Newspapers"
+    verified_by_ks: true
+
+  - id: atx-paper-002
+    applies_to: ["coated paper products (cups, plates and takeout food containers)", "food and beverage cartons (aseptic and gable top)"]
+    stream: recycle_bin
+    conditions: null
+    prep: []
+    where: null
+    source: src-01
+    quote: "Coated paper products (cups, plates and takeout food containers) ... Food and beverage cartons (aseptic and gable top)"
+    verified_by_ks: true
+
+  - id: atx-paper-003
+    applies_to: ["cardboard boxes"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["break down into roughly 2 foot by 2 foot squares"]
+    where: null
+    source: src-01
+    quote: "All cardboard boxes should be broken down into roughly 2'x2' squares. Use the lid of your recycling cart as a size guide."
+    verified_by_ks: true
+
+  - id: atx-plastic-004
+    applies_to: ["plastic bottles (water, soda, juice, hand sanitizer, shampoo, detergent)", "plastic jugs (milk, water, laundry detergent, bleach)", "attached bottle caps"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["rinse", "leave caps attached"]
+    where: null
+    source: src-02
+    quote: "Bottles (water, soda, juice, hand sanitizer, shampoo, detergent) ... Jugs (milk, water, laundry detergent, bleach) ... Attached bottle caps ... Please rinse food containers, bottles, and jugs to avoid contamination."
+    verified_by_ks: true
+
+  - id: atx-plastic-005
+    applies_to: ["plastic cups", "tubs (yogurt, sour cream)", "plastic food containers", "plastic jars (peanut butter, mayo)"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["rinse"]
+    where: null
+    source: src-02
+    quote: "Cups ... Tubs (yogurt, sour cream) ... Food containers ... Jars (peanut butter, mayo, etc.)"
+    verified_by_ks: true
+
+  - id: atx-plastic-006
+    applies_to: ["plastic buckets and baskets", "lawn chairs", "outdoor furniture", "coat hangers", "non-battery plastic toys"]
+    stream: recycle_bin
+    conditions: null
+    prep: []
+    where: null
+    source: src-02
+    quote: "Coat hangers ... Outdoor furniture ... Non-battery plastic toy"
+    verified_by_ks: true
+
+  - id: atx-plastic-007
+    applies_to: ["straws", "loose bottle caps", "plastic items smaller than 3 inches", "plasticware"]
+    stream: garbage
+    conditions: null
+    prep: []
+    where: null
+    source: src-02
+    quote: "Straws ... Loose bottle caps ... Plastic items smaller than 3 inches ... Plasticware"
+    verified_by_ks: true
+
+  - id: atx-plastic-008
+    applies_to: ["plastic bags", "film plastic (wrap and zip-top bags)", "bubble wrap"]
+    stream: drop_off_special
+    conditions: null
+    prep: ["clean and dry"]
+    where: "Participating retail stores with collection bins at the entrance, or the Recycle and Reuse Drop-off Center by appointment"
+    source: src-04
+    quote: "Since they are not recyclable curbside, plastic bags can be taken to a participating retail store."
+    verified_by_ks: true
+
+  - id: atx-foam-009
+    applies_to: ["Styrofoam (not packing peanuts)"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "Recycle and Reuse Drop-off Center, by appointment"
+    source: src-02
+    quote: "Styrofoam (no packing peanuts)"
+    verified_by_ks: true
+
+  - id: atx-special-010
+    applies_to: ["battery-operated toys"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "Recycle and Reuse Drop-off Center only"
+    source: src-02
+    quote: "Battery-operated toys (Recycle and Reuse Center only"
+    verified_by_ks: true
+
+  - id: atx-metal-011
+    applies_to: ["aluminum foil (balled 2 inches or larger)", "aluminum foil baking pans", "steel and tin cans"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["ball foil to 2 inches or larger"]
+    where: null
+    source: src-01
+    quote: "Aluminum foil (balled 2 inches or larger) ... Aluminum foil baking pans ... Steel and tin cans"
+    verified_by_ks: true
+
+  - id: atx-glass-012
+    applies_to: ["glass bottles and bottle caps", "glass jars and caps"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["labels can be left on"]
+    where: null
+    source: src-01
+    quote: "Bottles and bottle caps (labels can be left on containers) ... Jars and caps (labels can be left on containers)"
+    verified_by_ks: true
+
+  - id: atx-compost-013
+    applies_to: ["food scraps", "meat, poultry and seafood (including bones)", "cheese", "dairy products", "fruits", "vegetables", "grains", "pasta", "eggshells", "bread", "coffee grounds", "tea bags", "baked goods", "nuts", "leftovers", "spoiled food"]
+    stream: compost_bin
+    conditions: null
+    prep: ["no liquids, fats, oils or grease"]
+    where: null
+    source: src-03
+    quote: "Cooked or raw meat, poultry and seafood (including bones), cheese, dairy products, fruits, vegetables, grains, pasta, eggshells, bread, coffee grounds, tea bags, tea leaves, baked goods, nuts, jelly, candy, snack foods, leftovers, spoiled food."
+    verified_by_ks: true
+
+  - id: atx-compost-014
+    applies_to: ["food-soiled paper", "paper bags", "paper napkins", "paper towels", "paper plates", "paper cups", "paper take-out containers (no plastic or wax coating, metal removed)", "pizza boxes", "coffee filters", "tissues"]
+    stream: compost_bin
+    conditions: null
+    prep: ["remove metal", "no plastic or wax coating"]
+    where: null
+    source: src-03
+    quote: "Paper bags, paper napkins, paper towels, paper plates, paper cups, paper take-out containers and take-out boxes (with no plastic or wax coating, and with metal removed), pizza boxes, coffee filters, newspaper, tissues."
+    verified_by_ks: true
+
+  - id: atx-compost-015
+    applies_to: ["yard trimmings", "grass clippings", "small branches", "small tree limbs", "tree roots", "flowers", "leaves", "plants", "straw"]
+    stream: compost_bin
+    conditions: null
+    prep: []
+    where: null
+    source: src-03
+    quote: "Grass clippings, small branches, small tree limbs, tree roots, flowers, leaves, plants, straw."
+    verified_by_ks: true
+
+  - id: atx-compost-016
+    applies_to: ["popsicle sticks", "sawdust (in paper bags)", "shredded paper", "toothpicks", "wooden chopsticks", "untreated wood"]
+    stream: compost_bin
+    conditions: null
+    prep: ["sawdust in paper bags"]
+    where: null
+    source: src-03
+    quote: "Popsicle sticks, sawdust (in paper bags), shredded paper, toothpicks, wooden chopsticks and untreated wood."
+    verified_by_ks: true
+
+  - id: atx-special-017
+    applies_to: ["batteries"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "Recycle and Reuse Drop-off Center, on-demand household hazardous waste collection, an Austin Public Library branch, or a year-round battery recycling location"
+    source: src-04
+    quote: "Batteries should never be thrown into dumpsters or curbside trash, recycling or composting carts."
+    verified_by_ks: true
+
+  - id: atx-special-018
+    applies_to: ["electronics"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "Schedule an on-demand bulk collection through the Austin Recycles app, online, or by calling 3-1-1"
+    source: src-04
+    quote: "For electronics, schedule an on-demand bulk collection. ... Both services can be scheduled through the Austin Recycles app, online or by calling 3-1-1 (512-974-2000)."
+    verified_by_ks: true
+
+  - id: atx-metal-020
+    applies_to: ["aluminum cans", "beverage cans", "soda cans", "beer cans"]
+    stream: recycle_bin
+    conditions: null
+    # Main source names "metal" in general; its Metals list does not name aluminum cans (KS accepted 2026-10-31).
+    # Also corroborated by src-06 and src-07 ("Aluminum Cans ... call for pricing").
+    also_acceptable: [drop_off_special]
+    also_acceptable_source: src-05
+    also_acceptable_quote: "Right here in the Austin area you may exchange your empty aluminum cans for money."
+    prep: []
+    where: "Scrap metal yards in the Austin area buy aluminum cans (private businesses; named in the private pack only)"
+    source: src-01
+    quote: "Place mixed paper, hard plastic (no bags), metal and glass directly in your blue recycling cart; no sorting is required!"
+    verified_by_ks: true
+
+  - id: atx-plastic-021
+    applies_to: ["empty prescription pill bottles", "empty drug containers", "empty medicine bottles"]
+    stream: recycle_bin
+    conditions: null
+    prep: ["empty", "conceal or remove personal information, including Rx number"]
+    where: null
+    source: src-08
+    quote: "Conceal or remove any personal information, including Rx number, on the empty containers. ... Place empty drug containers in the blue recycling cart"
+    verified_by_ks: true
+
+  - id: atx-special-022
+    applies_to: ["used motor oil", "antifreeze", "automotive fluids", "oil filters"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "Recycle and Reuse Center, by appointment. Free for Austin and Travis County residents; businesses are not eligible to drop off hazardous waste."
+    source: src-09
+    quote: "The Recycle and Reuse Center requires an appointment. ... Accepted household hazardous waste items ... Automotive fluids and oil filters ... Use of the facility is free for Austin and Travis County residents, except for tires."
+    verified_by_ks: true
+
+  - id: atx-special-023
+    applies_to: ["tires", "car tires"]
+    stream: drop_off_special
+    conditions: null
+    prep: []
+    where: "Recycle and Reuse Center, by appointment. $6 per tire."
+    source: src-09
+    quote: "The Recycle and Reuse Center requires an appointment. ... Tires ... There is a fee to drop off tires. The fee is $6 per tire."
+    verified_by_ks: true
+
+  - id: atx-garbage-024
+    applies_to: ["oil-stained cardboard", "paper or cardboard soiled with oil or grease that is not food"]
+    stream: garbage
+    conditions: null
+    prep: []
+    where: null
+    # Compost keeps oils out; recycling is for clean paper. Not an automotive fluid itself (KS 2026-10-31).
+    source: src-03
+    quote: "Liquids (including fats, oils, grease) ... Always place clean paper products in your recycling cart so they can be recycled into new paper products"
+    destination_inferred: true
+    verified_by_ks: true
